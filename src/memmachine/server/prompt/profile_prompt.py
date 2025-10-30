@@ -330,6 +330,7 @@ UPDATE_PROMPT = """
     - If you want to keep the profile the same, as you should if the query is completely irrelevant or the information will soon be outdated, return the empty object: {}.
     - Listen to any additional instructions specific to the execution context provided underneath 'EXTRA EXTERNAL INSTRUCTIONS'
     - First, think about what should go in the profile inside <think> </think> tags. Then output only a valid JSON.
+    - CRITICAL: Do NOT wrap your JSON response in markdown code blocks (```json). Return ONLY the raw JSON object.
 EXTRA EXTERNAL INSTRUCTIONS:
 NONE
 """
